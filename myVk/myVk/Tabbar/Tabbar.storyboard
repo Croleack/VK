@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Сервисы-->
+        <scene sceneID="8WY-mg-AYS">
+            <objects>
+                <viewController id="5L2-Yk-x8j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVd-63-yId">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="m0J-8n-Tkw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Сервисы" image="icons8-сервисы-50" id="qQ9-nd-U3J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awh-R9-Jki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1037" y="496"/>
+        </scene>
+        <!--Мессенджер-->
+        <scene sceneID="wvi-x6-gAa">
+            <objects>
+                <viewController id="vsD-io-1cZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bld-eN-xVF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oi0-ar-hAn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Мессенджер" image="icons8-facebook-messenger-50" id="Icw-MN-n0S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEQ-NB-ONG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="496"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="DNO-hD-g4I">
+            <objects>
+                <viewController id="0Sz-gV-j9k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZh-Ae-vZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9XA-j6-prk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="icons8-главная-страница-50" id="idL-4B-9l3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zN7-WA-e30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1717" y="497"/>
+        </scene>
+        <!--Tabbar Controller-->
+        <scene sceneID="Rhj-uS-hR6">
+            <objects>
+                <tabBarController storyboardIdentifier="Tabbar" id="NiX-uP-zdK" customClass="TabbarController" customModule="myVk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="912-s1-cdX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Sz-gV-j9k" kind="relationship" relationship="viewControllers" id="Cyx-t5-vY1"/>
+                        <segue destination="5L2-Yk-x8j" kind="relationship" relationship="viewControllers" id="QBI-2b-jtK"/>
+                        <segue destination="vsD-io-1cZ" kind="relationship" relationship="viewControllers" id="Prb-ML-oLX"/>
+                        <segue destination="0B3-nl-NbK" kind="relationship" relationship="viewControllers" id="gS6-ll-mET"/>
+                        <segue destination="c7c-vx-ZN1" kind="relationship" relationship="viewControllers" id="C4y-Cg-yr3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THT-SE-21Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="-335"/>
+        </scene>
+        <!--Картинки-->
+        <scene sceneID="tdB-HR-bUW">
+            <objects>
+                <viewController id="0B3-nl-NbK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPe-6C-nfe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DSC06482" translatesAutoresizingMaskIntoConstraints="NO" id="BOh-sp-wfh">
+                                <rect key="frame" x="46" y="121" width="301" height="488"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rx0-bN-ZYR"/>
+                        <color key="backgroundColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BOh-sp-wfh" firstAttribute="leading" secondItem="Rx0-bN-ZYR" secondAttribute="leading" constant="46" id="9UI-gu-9fg"/>
+                            <constraint firstItem="BOh-sp-wfh" firstAttribute="top" secondItem="Rx0-bN-ZYR" secondAttribute="top" constant="62" id="brI-FL-fcQ"/>
+                            <constraint firstItem="Rx0-bN-ZYR" firstAttribute="trailing" secondItem="BOh-sp-wfh" secondAttribute="trailing" constant="46" id="oLc-TO-2kT"/>
+                            <constraint firstItem="Rx0-bN-ZYR" firstAttribute="bottom" secondItem="BOh-sp-wfh" secondAttribute="bottom" constant="160" id="sdI-eO-82U"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Картинки" image="icons8-boruto-uzumaki-48()" id="smT-cu-jeO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DA5-ZB-ink" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.99236641221376" y="495.77464788732397"/>
+        </scene>
+        <!--Видео-->
+        <scene sceneID="L7E-B5-Z4J">
+            <objects>
+                <viewController id="c7c-vx-ZN1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHc-n8-ttC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dWf-L2-Snc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Видео" image="icons8-видео-50" id="Fa3-r6-AEH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78x-g6-iHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DSC06482" width="2000" height="1125.3333740234375"/>
+        <image name="icons8-boruto-uzumaki-48()" width="24" height="24"/>
+        <image name="icons8-facebook-messenger-50" width="25" height="25"/>
+        <image name="icons8-видео-50" width="25" height="25"/>
+        <image name="icons8-главная-страница-50" width="25" height="25"/>
+        <image name="icons8-сервисы-50" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

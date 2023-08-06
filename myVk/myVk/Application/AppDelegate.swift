@@ -10,11 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //спросить у БОРОДЫ что произошло
+        UINavigationBar.appearance().barTintColor = UIColor.green
+
+        
         return true
+        
     }
 
     // MARK: UISceneSession Lifecycle

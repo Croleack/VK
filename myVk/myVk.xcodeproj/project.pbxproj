@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E902E72F2A7FC403009E9747 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E902E72E2A7FC403009E9747 /* Tabbar.storyboard */; };
+		E902E7312A7FCDF0009E9747 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E7302A7FCDF0009E9747 /* TabbarController.swift */; };
+		E902E7382A7FD08A009E9747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E7372A7FD08A009E9747 /* MainViewController.swift */; };
+		E902E73A2A7FD0A2009E9747 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E7392A7FD0A2009E9747 /* ServicesViewController.swift */; };
+		E902E73C2A7FD0B3009E9747 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E73B2A7FD0B3009E9747 /* MessagesViewController.swift */; };
+		E902E73E2A7FD0C6009E9747 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E73D2A7FD0C6009E9747 /* PicturesViewController.swift */; };
+		E902E7402A7FD0D4009E9747 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902E73F2A7FD0D4009E9747 /* VideoViewController.swift */; };
 		E9D172CC2A7FAFCA00015857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D172CB2A7FAFCA00015857 /* AppDelegate.swift */; };
 		E9D172CE2A7FAFCA00015857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D172CD2A7FAFCA00015857 /* SceneDelegate.swift */; };
 		E9D172D02A7FAFCA00015857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D172CF2A7FAFCA00015857 /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E902E72E2A7FC403009E9747 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		E902E7302A7FCDF0009E9747 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		E902E7372A7FD08A009E9747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E902E7392A7FD0A2009E9747 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		E902E73B2A7FD0B3009E9747 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		E902E73D2A7FD0C6009E9747 /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
+		E902E73F2A7FD0D4009E9747 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		E9D172C82A7FAFCA00015857 /* myVk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myVk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D172CB2A7FAFCA00015857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D172CD2A7FAFCA00015857 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E902E72B2A7FC2A5009E9747 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E902E7322A7FCFA3009E9747 /* main */,
+				E902E7332A7FCFB5009E9747 /* services */,
+				E902E7342A7FCFE3009E9747 /* messages */,
+				E902E7352A7FD00C009E9747 /* pictures */,
+				E902E7362A7FD019009E9747 /* video */,
+				E902E72E2A7FC403009E9747 /* Tabbar.storyboard */,
+				E902E7302A7FCDF0009E9747 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		E902E7322A7FCFA3009E9747 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				E902E7372A7FD08A009E9747 /* MainViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		E902E7332A7FCFB5009E9747 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				E902E7392A7FD0A2009E9747 /* ServicesViewController.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		E902E7342A7FCFE3009E9747 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				E902E73B2A7FD0B3009E9747 /* MessagesViewController.swift */,
+			);
+			path = messages;
+			sourceTree = "<group>";
+		};
+		E902E7352A7FD00C009E9747 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				E902E73D2A7FD0C6009E9747 /* PicturesViewController.swift */,
+			);
+			path = pictures;
+			sourceTree = "<group>";
+		};
+		E902E7362A7FD019009E9747 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				E902E73F2A7FD0D4009E9747 /* VideoViewController.swift */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
 		E9D172BF2A7FAFCA00015857 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +124,32 @@
 		E9D172CA2A7FAFCA00015857 /* myVk */ = {
 			isa = PBXGroup;
 			children = (
-				E9D172CB2A7FAFCA00015857 /* AppDelegate.swift */,
-				E9D172CD2A7FAFCA00015857 /* SceneDelegate.swift */,
-				E9D172CF2A7FAFCA00015857 /* ViewController.swift */,
-				E9D172D12A7FAFCA00015857 /* Main.storyboard */,
+				E9D172DF2A7FB02B00015857 /* Application */,
+				E9D172E12A7FB2A800015857 /* Main */,
+				E902E72B2A7FC2A5009E9747 /* Tabbar */,
 				E9D172D42A7FAFCC00015857 /* Assets.xcassets */,
 				E9D172D62A7FAFCC00015857 /* LaunchScreen.storyboard */,
 				E9D172D92A7FAFCC00015857 /* Info.plist */,
 			);
 			path = myVk;
+			sourceTree = "<group>";
+		};
+		E9D172DF2A7FB02B00015857 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E9D172CD2A7FAFCA00015857 /* SceneDelegate.swift */,
+				E9D172CB2A7FAFCA00015857 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E9D172E12A7FB2A800015857 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E9D172CF2A7FAFCA00015857 /* ViewController.swift */,
+				E9D172D12A7FAFCA00015857 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E902E72F2A7FC403009E9747 /* Tabbar.storyboard in Resources */,
 				E9D172D82A7FAFCC00015857 /* LaunchScreen.storyboard in Resources */,
 				E9D172D52A7FAFCC00015857 /* Assets.xcassets in Resources */,
 				E9D172D32A7FAFCA00015857 /* Main.storyboard in Resources */,
@@ -138,9 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E902E73A2A7FD0A2009E9747 /* ServicesViewController.swift in Sources */,
+				E902E73C2A7FD0B3009E9747 /* MessagesViewController.swift in Sources */,
+				E902E7402A7FD0D4009E9747 /* VideoViewController.swift in Sources */,
 				E9D172D02A7FAFCA00015857 /* ViewController.swift in Sources */,
+				E902E7312A7FCDF0009E9747 /* TabbarController.swift in Sources */,
 				E9D172CC2A7FAFCA00015857 /* AppDelegate.swift in Sources */,
+				E902E73E2A7FD0C6009E9747 /* PicturesViewController.swift in Sources */,
 				E9D172CE2A7FAFCA00015857 /* SceneDelegate.swift in Sources */,
+				E902E7382A7FD08A009E9747 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
