@@ -8,16 +8,7 @@
 import UIKit
 
 class ServicesTableViewCell: UITableViewCell {
-
-
-    @IBOutlet weak var pic: UIImageView!
+    
     @IBOutlet weak var menuName: UILabel!
-    
-    
-    
-    
-    
-    
-    
-    
+        
 }

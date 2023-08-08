@@ -27,31 +27,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JaV-si-swJ">
-                                                    <rect key="frame" x="40" y="25.666666666666664" width="50" height="49.333333333333321"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="51O-dX-F5P"/>
-                                                        <constraint firstAttribute="width" constant="50" id="cU3-hA-tgz"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kd-ug-RMa">
-                                                    <rect key="frame" x="105" y="39" width="42" height="21"/>
+                                                    <rect key="frame" x="88" y="39" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0Kd-ug-RMa" firstAttribute="centerY" secondItem="QKN-7p-2NK" secondAttribute="centerY" id="7zL-M1-bkM"/>
-                                                <constraint firstItem="JaV-si-swJ" firstAttribute="centerY" secondItem="QKN-7p-2NK" secondAttribute="centerY" id="9CF-iu-hUz"/>
-                                                <constraint firstItem="0Kd-ug-RMa" firstAttribute="leading" secondItem="JaV-si-swJ" secondAttribute="trailing" constant="15" id="NMz-cT-39j"/>
-                                                <constraint firstItem="JaV-si-swJ" firstAttribute="leading" secondItem="QKN-7p-2NK" secondAttribute="leadingMargin" constant="20" id="hn8-0y-opA"/>
+                                                <constraint firstItem="0Kd-ug-RMa" firstAttribute="centerY" secondItem="QKN-7p-2NK" secondAttribute="centerY" id="MXA-0I-znf"/>
+                                                <constraint firstItem="0Kd-ug-RMa" firstAttribute="leading" secondItem="QKN-7p-2NK" secondAttribute="leadingMargin" multiplier="2" constant="48" id="Meo-za-heC"/>
                                             </constraints>
-                                            <connections>
-                                                <outlet property="menuName" destination="0Kd-ug-RMa" id="ouH-1t-Joj"/>
-                                                <outlet property="pic" destination="JaV-si-swJ" id="cK1-iC-Rms"/>
-                                            </connections>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuName" destination="0Kd-ug-RMa" id="fuo-Nd-4mB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -179,7 +169,6 @@
         <image name="icons8-видео-50" width="25" height="25"/>
         <image name="icons8-главная-страница-50" width="25" height="25"/>
         <image name="icons8-сервисы-50" width="25" height="25"/>
-        <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

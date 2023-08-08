@@ -9,13 +9,13 @@ import UIKit
 
 //необходимо подписаться еще на два протокола, чтобы работать с таблицами
 class ServicesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-
-    let cells = ["Друзья", "Сообщества", "Музыка"]
+    
+    let cells = ["Друзья", "Сообщества", "Музыка", "Маркет", "Игры", "Стикеры", "Шаги", "Знакомства"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
     }
     
     //этот метод показывает количество ячеек в нашей таблице
@@ -30,5 +30,17 @@ class ServicesViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.menuName.text = cells[indexPath.row]
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return HeaderView.instantiate()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 104
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) ->UIView? {
+        return UIView()
+    }
+    
 }
